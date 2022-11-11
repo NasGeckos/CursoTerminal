@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Configuración de Entorno de Desarrollo</title>
+</head>
+<body>
+<header>
+        <nav>
+            <ul>
+                <li><a href="./2-repositorios-github.html">2- Configurar repositorios terminal</a></li>
+                <li><a href="./3-desplazarse-terminal.html">3- Desplazarse por terminal</a></li>
+                <li><a href="./4-manipular-archivos.html">4- Manipular archivos</a></li>
+                <li><a href="./5-explorar-archivos.html">5- Explorar contenido archivos</a></li>
+            </ul>
+        </nav>
+</header>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div>
+    <h1>Curso de Prework: Configuración de Entorno de Desarrollo en Windows</h1>
+    <a href="https://platzi.com/clases/2292-terminal/37341-que-es-la-terminal/">Link al curso<a>
+</div>
+<div>
+        <p>
+            ----------------------------------------------------------------- <br>
+
+                    Contraseña de Root Ubuntu - WS2: Nelsonadri89<br>
+                    <br>
+                Toquen gitHub: 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<br>
+
+            ----------------------------------------------------------------- <br>
+        </p>
+        <h2>@ Subir repositrios a GitHub: </h2>
+            <p>
+                - Primero crear el repositorio en github<br>
+                - Luego crear la llave SSH<br>
+                - Crear carpeta en WSL2: mkdir NOMBRECARPETA	<br>
+                - echo "# NOMBREPROYECTO" >> READMI.md<br>
+                - git add . (esto agrega todos los archivos que hay en la carpeta a nuestro reposictorio)
+                - git commit -m "comentario" <---- si no anda, seguir los pasos de abajo<br>
+                - git config --global user.email "AQUI EMAIL GITHUB"<br>
+                - git config --global user.name AQUI NOMBRE DE USUARIO (sin comillas)<br>
+                - git config --edit --global (aqui chequeamos el email y usuario cargado), para salir ctrl + Xx
+                - git commit -m "comentario"<br>
+                - git remote add origin AQUI https del repositorio<br>
+                - git push -u origin main<br>
+                - Aqui pide dos username (usuario de github), y contraseña (token creado con el SSH)**<br>
+                - Refresh en navegador de github, para actualizar el repositorio<br>
+                - desde WS2L, tipear code . ---> para abrir el VisualStudio Code con el proyecto<br>
+                - Al modificar los archivos en VScode y guardarlos, en la barra izq, va a saltar una alerta<br>
+                y en la terminal de WS2L, o la terminal de VScode:<br>
+            </p>
+        <h2>@ Para agregar los cambios al reositorio de github:</h2>
+            <p>
+                - git add .<br>
+                - git commit -m "COMENTARIO DE MODIFICACION"<br>
+                - git push -u origin main<br>
+                - Aqui pide dos username (usuario de github), y contraseña (token creado con el SSH)<br>
+                - Refresh en navegador de github, para actualizar el repositorio, chequear cambios <br>
+            </p>
+            
+        
+</div>
+</body>
+</html>
