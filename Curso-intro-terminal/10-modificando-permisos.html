@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Modificando permisos en la terminal</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Index</a></li>
+            </ul>
+        </nav>
+    </header>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div>
+        <h1>Curso de Introducción a la Terminal y Línea de Comandos</h1>
+        <a href="https://platzi.com/clases/2292-terminal/37341-que-es-la-terminal/">Link al curso<a>
+</div>
+<div>
+    <h3>Ruta repositorios Github:</h3>
+    <p>root@Nas:~/proyectospersonales/Platzi/CursoTerminal#</p>
+</div>
+<div>
+        <H2>Modificando permisos en la terminal</H2>
+        <p>Existen diversos usuarios con permisos cada uno; el usuario root es especial y puede hacer de todo</p>
+        <p>Si están en ubuntu el comando su root no funciona por que está desactivado y con ninguna contraseña se puede acceder a él, pero existe una alternativa que al final de cuentas es la misma, el comando sudo su</p>
+        <ul>
+            <li>Puedes crear archivos de texto también con > archivo.txt y también podemos editarlo con cat > archivo.txt 📜</li>
+            <li>En un archivo, se muestran: [tipo de archivo][rwx usuario][rwx grupo][rwx mundo], por ejemplo, -rw-r--r-- mitexto.txt 👀.
+                chmod -permiso en octal para usuario-</li>
+            <li>-para grupo--para mundo- -archivo- change mode nos sirve para cambiar los permisos de un archivo. Si hacemos por ejemplo chmod 755 mitexto.txt tendremos ahora -rwxr-xr-x mitexto.txt, esto no cambia para nada el contenido del archivo.</li>
+            <li>Para quitarle los permisos a alguien en particular, usamos el modo simbólico y usando laresta, por ejemplo quitando el permiso de lectura al usuario chmod u-r mitexto.txt. Para agregar, se usa la suma. 🧮</li>
+            <li>Podemos hacer configuraciones mas avanzadas, por ejemplo, podemos asignar varios permisos al mismo tiempo chmod u-x,go=w mitexto.txt.</li>
+            <li>whoami Para saber que usuario somos, y también podemos obtener el ID del usuario con id.</li>
+            <li>su root para cambiar de usuario hacía root, hay que tener cuidado al usar este usuario 😟. Su home es incluso distinto. Los archivos que crea root (o otro usuario) no se pueden eliminar por un usuario normal.</li>
+            <li>sudo -comando- nos otorga temporalmente los permisos de root para ejecutar algún comando que ocupe permisos especiales. 🦸🏽 Nunca dejes el usuario root por defecto, y ponle una contraseña distinta!!</li>
+        </ul>
+</div>
+</body>
+</html>

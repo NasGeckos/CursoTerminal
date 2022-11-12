@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/style.css">
-    <title>Wildcards</title>
+    <title>Editores en la terminal</title>
 </head>
 <body>
     <header>
@@ -29,14 +29,18 @@
     <p>root@Nas:~/proyectospersonales/Platzi/CursoTerminal#</p>
 </div>
 <div>
-        <H2>Wildcards</H2>
+        <H2>Editores en la terminal</H2>
+        <p>Explorar editor de texto VIM</p>
         <ul>
-            <li>ls *: ls *.txt, filtra todos los archivos .txt del directorio o el .X que busquemos</li>
-            <li>ls NOMB*: ls nombreArchivo*, muestra los archivos que comienzan con ese nombre, independientemente de su formato</li>
-            <li>ls NOMB?: filtra todos los archivos que contengan NOMB + 1 caracter al final, el signo "?" indica la cantidad de caracteres, pueden ser ej: ls NOMB??? = NOMB123 </li>
-            <li>ls [[:upper]]*: filtra archivos o directorios con la primera letra Mayuscula</li>
-            <li>ls -d [[:upper]]*: filtra solo directorios con la primera letra Mayuscula, tambien es posible buscar con minusculas [[:lower]]</li>
-            <li>ls [ad]*: Busca caracteres que comiencen con A o D</li>
+            <li>vim: para ejecutarlo, :q+Enter, para salir</li>
+            <li>vim index.html: crear archivo de texto en vim</li>
+            <li>i: modo Insert, precionandola nos deja empezar a editar el archivo</li>
+            <li>Esc: para salir del modo Insert</li>
+            <li>/titulo: para buscar una palabra</li>
+            <li>d+d: estando en el modo normal borrar una linea</li>
+            <li>:w : para guardar el documento</li>
+            <li>:wq : para guardar y salir</li>
+            <li>wq! : fuerza la salida</li>
         </ul>
 </div>
 </body>

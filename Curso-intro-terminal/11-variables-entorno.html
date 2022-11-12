@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style/style.css">
+    <title>Cómo configurar variables de entorno</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="/index.html">Index</a></li>
+            </ul>
+        </nav>
+    </header>
+<br>
+<br>
+<br>
+<br>
+<br>
+<div>
+        <h1>Curso de Introducción a la Terminal y Línea de Comandos</h1>
+        <a href="https://platzi.com/clases/2292-terminal/37341-que-es-la-terminal/">Link al curso<a>
+</div>
+<div>
+    <h3>Ruta repositorios Github:</h3>
+    <p>root@Nas:~/proyectospersonales/Platzi/CursoTerminal#</p>
+</div>
+<div>
+        <H2>Cómo configurar variables de entorno</H2>
+        <p>Aqui unos comandos para configurar nuestra consola</p>
+        <ul>
+            <li>Link simbolico: ls -s Documents/Dev Desarrollo --> la ruta Documents/Dev va a estar linkeada con el nombre "Desarrollo", de esta forma se puede acceder mediente ese link, ej: cd Desarrollo</li>
+            <li>printenv: nos muestra todas las variables de entorno que tenemos instaladas</li>
+            <li>echo $HOME: nos dice donde es el home de nuestro usuario</li>
+            <li>echo $PATH: tiene todas las rutas de los binarios que ejecutan nuestro sistema.</li>
+            <li>En HOME, existe un archivo que se llama .bashrc que es donde está nuestra configuración de Bash. Lo podemos abrir con VS Code para modificarlo. En este archivo podemos crear alias.</li>
+            <li>alias < nombre >="comando" para crear un alias útil 👀.</li>
+            <li>code < archivo > para abrir un archivo de texto en VS Code desde la terminal.</li>
+            <li>Si code no funciona en la terminal de ubuntu, probrar ejecutarlo en la terminal de VisualSutido Code</li>
+            <li>Para modificar o crear una variable de entorno, se hace, por ejemplo PLATZI_MESSAGE='Hola amigos".</li>
+            <li>Para agregar una ruta a la variable PATH ponemos en .bashrc PATH=$PATH:<ruta>, guardamos, cargamos bash en la terminal, y listo 😄.</li>
+            <li>Es muuuy importante tener cuidado con los alias, nunca hay que nombrar un alias como un comando ya existente 😟.</li>
+        </ul>
+</div>
+</body>
+</html>

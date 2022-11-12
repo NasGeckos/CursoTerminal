@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/style/style.css">
-    <title>Wildcards</title>
+    <title>Comprimiendo archivos tar y zip</title>
 </head>
 <body>
     <header>
@@ -29,14 +29,15 @@
     <p>root@Nas:~/proyectospersonales/Platzi/CursoTerminal#</p>
 </div>
 <div>
-        <H2>Wildcards</H2>
+        <H2>Comprimiendo archivos tar y zip</H2>
+        <p></p>
         <ul>
-            <li>ls *: ls *.txt, filtra todos los archivos .txt del directorio o el .X que busquemos</li>
-            <li>ls NOMB*: ls nombreArchivo*, muestra los archivos que comienzan con ese nombre, independientemente de su formato</li>
-            <li>ls NOMB?: filtra todos los archivos que contengan NOMB + 1 caracter al final, el signo "?" indica la cantidad de caracteres, pueden ser ej: ls NOMB??? = NOMB123 </li>
-            <li>ls [[:upper]]*: filtra archivos o directorios con la primera letra Mayuscula</li>
-            <li>ls -d [[:upper]]*: filtra solo directorios con la primera letra Mayuscula, tambien es posible buscar con minusculas [[:lower]]</li>
-            <li>ls [ad]*: Busca caracteres que comiencen con A o D</li>
+            <li>Comprimir: tar: se usa mucho en repositorios, ej: tar -cvf < nombre del archivo.tar > < directorio donde se encuntran los archivos a comprimir > </li>
+            <li>Comprimir Gzip: tar: opcion de comprecion de Gzip, ej: tar -cvzf < nombre del archivo.tar > < directorio donde se encuntran los archivos a comprimir > </li>
+            <li>descomprimir: tar -xzvf < nombre del archivo comprimido >.tar.gz </li>
+            <li>Instalar Zip: apt install zip</li>
+            <li>Comprimir Zip: zip -r < nombre archivo >.zip + < nombre directorio ></li>
+            <li>Descomprimir Zip: unzip < nombre archivo >.zip </li>
         </ul>
 </div>
 </body>

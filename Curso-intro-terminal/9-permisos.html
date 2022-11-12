@@ -4,20 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="/style/style.css">
     <title>Cómo se manejan los permisos</title>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="./2-repositorios-github.html">2- Configurar repositorios terminal</a></li>
-                <li><a href="./3-desplazarse-terminal.html">3- Desplazarse por terminal</a></li>
-                <li><a href="./4-manipular-archivos.html">4- Manipular archivos</a></li>
-                <li><a href="./5-explorar-archivos.html">5- Explorar contenido archivos</a></li>
+                <li><a href="/index.html">Index</a></li>
             </ul>
         </nav>
-</header>
+    </header>
 <br>
 <br>
 <br>
@@ -33,11 +30,31 @@
 </div>
 <div>
         <H2>Cómo se manejan los permisos</H2>
+        <p>Los permisos nos permiten definir de una manera simple y efectiva las reglas de acceso como lectura ( r), escritura (w) o ejecución (x) a determinados archivos o directorios.</p>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Cuando listamos con ls -l se muestran varias cosas. Los tipos de archivos: 
+                <ul>
+                    <li>- archivo normal.</li>
+                    <li>d directorio.</li>
+                    <li>l link simbólico.</li>
+                    <li>b archivo de bloque especial.</li>
+                </ul>
+            </li>
+            <li>Tipos de modos: rwx corresponde con read, write y execute. Se representan con 3 bits, y los podemos manejar a través de un modo octal, esto es, pasar de binario a número.
+                <ul>
+                    <li>rwx (1,1,1) dueño. En modo octal es 7.</li>
+                    <li>r-x (1,1,1) grupo. En modo octal es 5.</li>
+                    <li>r-x (1,0,1) world. Octal 5.</li>
+                </ul>
+            </li>
+            <li>Modo simbólico: Esto es para asignar los permisos a los diferentes posibles usuarios.
+                <ul>
+                    <li>u Solo para el usuario.</li>
+                    <li>g Solo para el grupo.</li>
+                    <li>o Solo para otros (world).</li>
+                    <li>a Aplica para todos.</li>
+                </ul>
+            </li>
         </ul>
 </div>
 </body>
